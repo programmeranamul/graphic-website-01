@@ -1,0 +1,13 @@
+.section {
+  padding-top: 115px;
+  padding-bottom: 60px;
+  background-color: #f8f6fa;
+  margin-top: -5px;
+}
+
+@media (max-width: 767.98px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 24px;
+  }
+}

@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&family=Livvic:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Google Font  */
+
+/* font-family: 'Asap', sans-serif;
+font-family: 'Livvic', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+.font-asap {
+  font-family: "Asap", sans-serif;
+}
+.font-livvic {
+  font-family: "Livvic", sans-serif;
+}
+.font-sans {
+  font-family: "Open Sans", sans-serif;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/* color and background color*/
+.main-color {
+  color: #2b1b9a;
+}
+.color-sky {
+  color: #67b6f4;
+}
+.bg-main {
+  background-color: #2b1b9a;
+}
+.bg-deep-gray {
+  background-color: #f8f6fa;
+}
+.secondary-color {
+  color: #e2defc;
+}
+
+/* font-side and font-weight */
+.fs-17 {
+  font-size: 17px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-30 {
+  font-size: 30px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+/* line height */
+.lh-32 {
+  line-height: 32px;
+}
+
+/* Margin padding */
+.mt-80 {
+  margin-top: 80px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+/* utils */
+.cursor-pointer {
+  cursor: pointer;
+}
+.position-relative {
+  position: "relative";
+}
+.title-3,
+.title-4 {
+  font-family: Livvic, sans-serif;
+  font-weight: 600;
+  color: #2b1b9a;
+}
+.title-3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+.title-4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 333333;
+  right: 0;
+}
+.new-quote {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  box-shadow: 2px 4px 12px rgb(43 27 154 / 30%);
+  z-index: 199;
+  background-color: #9d91f5;
+  color: #fff;
+  width: auto;
+  border-radius: 22px;
+  padding: 18px 32px;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.new-quote:hover {
+  background-color: #fff;
+  color: #2b1b9a;
+}
+.main_section {
+  margin-top: 75px;
+}
+
+/* width */
+.w-100 {
+  width: 100%;
+}
+.height-100{
+  height:100%
+}
+
+/* Button */
+.main-btn,
+.secondary-btn {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  padding: 14px 30px;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgb(43 27 154 / 8%);
+}
+
+.main-btn {
+  background-color: #67b6f4;
+  color: #fff !important;
+  transition: all 0.3s linear;
+}
+.main-btn:hover {
+  background-color: #9d91f5;
+}
+.secondary-btn {
+  color: #fff;
+  background-color: #9d91f5;
+}
+.btn-center-with-icon{
+  display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-content {
+  background-color: blueviolet;
+  width: 100%;
+  /* height: 100vh;   */
+  transition: all 0.4s ease;
+}
+
+.slide_out_content {
+  transform: translate3d(440px, 0, 0);
+}
+.layout_container {
+  overflow: hidden;
+}
+
+/* Teliphon number npm style */
+.PhoneInputCountry {
+  margin-right: 0px !important;
+  padding: 0 20px 0 15px !important;
+  border-radius: inherit !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.PhoneInputInput,
+.PhoneInputCountry {
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  background-color: #edebf1;
+  color: #5f5572;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Asap, sans-serif;
+  line-height: 26px;
+  padding: 14px 0px 16px;
+}
+.PhoneInputInput {
+  padding-left: 17px;
+}
+.PhoneInputInput:focus {
+  background-color: #e2defc;
+  box-shadow: none;
+  color: #2b1b9a;
+}
+
+/*------------------------------- Next Image Overwirte Start----------------------- */
+.next-img-container > span {
+  position: unset !important;
+}
+
+.next-image {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+/*------------------------------- Next Image Overwirte End----------------------- */
+
+/*------------------------------- Service in home page Start ----------------------------*/
+.bg_red {
+  background-color: #fa585a;
+}
+.bg_blue {
+  background-color: #67b6f4;
+}
+.bg_beguni {
+  background-color: #9d91f5;
+}
+.bg_yellow {
+  background-color: #ffcd1e;
+}
+.mt_5px{
+  margin-top: -5px;
+}
+
+/*------------------------------- Service in home page End ----------------------------*/
+
+/*--------------------- How It Work Slider One Start ------------------------*/
+.how_img_area_S1 {
+  flex-basis: 42%;
+  padding: 28px 6.6vw 48px 5.4vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.how_img_area_S1::before {
+  height: 100%;
+  width: 50%;
+  content: "";
+  background-color: #67b6f4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.how_slider_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.how_slider_1 .how_s1_img_con {
+  width: 100%;
+}
+.how_slider_1 {
+  padding-top: 55px;
+}
+
+.how_slider_1 .slick-prev,
+.how_slider_1 .slick-next {
+  z-index: 1;
+  width: 72px !important;
+  height: 72px !important;
+  background-color: #fff !important;
+  box-shadow: 10px 22px 60px rgb(43 27 154 / 6%) !important;
+  border-radius: 50%;
+  display: block;
+  padding: 12px;
+}
+.how_slider_1 .slick-prev {
+  left: -36px !important;
+}
+.how_slider_1 svg {
+  color: #9d91f5 !important;
+}
+.how_slide1_beguni .how_img_area_S1::before{
+background-color: #9d91f5 !important;
+}
+.how_slide1_yellow .how_img_area_S1::before{
+background-color: yellow !important;
+}
+.how_slide1_red .how_img_area_S1::before{
+background-color: #fa585a !important;
+}
+.how_slide1_blue .how_img_area_S1::before{
+background-color: #67b6f4 !important;
+}
+/*--------------------- How It Work Slider One End ------------------------*/
+
+/*---------------------Common slider with backgroud change Start---------------------*/
+.common_slider{
+  background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 309px;
+
+}
+.slide-0{
+  background-image: url("../public/common/slider/portrait-cheerful-young-woman-purple-wall.png");
+  background-color: #9d91f5 !important;
+
+}
+.slide-1{
+  background-image: url("../public/common/slider/sneaker-airbuds.png");
+  background-color: #fa585a !important;
+}
+.slide-2{
+  background-image: url("../public/common/slider/joyful-female-models-running-blue-wall.png");
+  background-color: #67b6f4 !important;
+}
+.slide-3{
+  background-image: url("../public/common/slider/yellow-shirt-over-camera.png");
+  background-color: #ffcd1e !important;
+}
+/*---------------------Common slider with backgroud change End---------------------*/
+
+
+
+@media (min-width: 1200px) {
+  /*---------------------Common slider with backgroud change Start---------------------*/
+  .common_slider{
+    background-size: 402px;
+  }
+  /*---------------------Common slider with backgroud change End---------------------*/
+  
+}
+
+
+@media (max-width: 991.98px) {
+  /*--------------------- How It Work Slider One Start ------------------------*/
+ 
+  .how_img_area_S1 {
+    padding: 37px;
+  }
+  /*--------------------- How It Work Slider One End ------------------------*/
+}
+
+@media (max-width: 767.98px) {
+  .common_slider{
+background-image: none !important;
+  }
+  .new-quote {
+    bottom: 12px;
+    right: 12px;
+    padding: 12px 15px;
+    border-radius: 22px;
+    letter-spacing: 0.07em;
+  }
+  .title-3{    
+    font-size: 24px;
+    line-height: 28px;
+
+  }
+  /*--------------------- How It Work Slider One Start ------------------------*/
+  .how_s1_img_con {
+    width: 50%;
+  }
+  .how_img_area_S1::before {
+    height: 50%;
+    width: 100%;
+  }
+  .how_slider_1 {
+    padding-top: 30px;
+  }
+  /*--------------------- How It Work Slider One End ------------------------*/
+}
+
+@media (max-width: 575.98px) {
+  /*--------------------- How It Work Slider One Start ------------------------*/
+  .how_s1_img_con {
+    width: 75%;
+  }
+  .how_img_area_S1 {
+    padding-top: 60px;
+  }
+  .how_slider_1 .slick-prev,
+.how_slider_1 .slick-next {
+  display: none !important;
+}
+  /*--------------------- How It Work Slider One End ------------------------*/
+}

@@ -1,0 +1,76 @@
+import Image from "next/image";
+import style from "../../styles/Home/HowItWork.module.css";
+import { CgArrowRight } from "react-icons/cg";
+
+function Home_HowItWorks() {
+  return (
+    <section className={style.section_conatiner}>
+      <article className="container">
+        <div className="row">
+          <div className={`${style.text_section} col-md-6`}>
+            <h2 className="d-none d-md-block">How We Work</h2>
+            <div>
+              <ol>
+                <li>
+                  <span className={`${style.fr_sriale} ${style.sriale}`}>
+                    1
+                  </span>
+                  <span>
+                    You need to select the service, image complexity, and
+                    turnaround time. You can add any additional instructions as
+                    you wish the outcome to be. We will reach out to you with
+                    all the details and estimated time within 24 hours.
+                  </span>
+                </li>
+                <li>
+                  <span className={`${style.two_sriale} ${style.sriale}`}>
+                    2
+                  </span>
+                  <span>
+                    If you are satisfied with our response. The next phase is to
+                    upload all the pictures. We accept photos in various formats
+                    so don’t worry. As our website is encrypted, you can upload
+                    pictures without hesitation.
+                  </span>
+                </li>
+                <li>
+                  <span className={`${style.three_sriale} ${style.sriale}`}>
+                    3
+                  </span>
+                  <span>
+                    Finally, we will again send you a final draft. If you
+                    approve, then we’ll start working on it. Once we’re done with the work. We will share a link to check
+                    and download all the pictures.
+                  </span>
+                </li>                
+              </ol>
+            </div>
+            <div className="pb-4 ">
+              <button className="main-btn d-block d-sm-inline-block ">
+                CHECK OUT OUR PROCESS
+                <span>
+                  <CgArrowRight className="fs-24" />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div className={`col-md-6 ${style.img_section}`}>
+            <h2 className="d-block d-md-none text-center">How it works</h2>
+            <div className={style.img}>
+              <div className="next-img-container">
+                <Image
+                  className="next-image"
+                  alt="Image"
+                  src={"/home/section-how-it-works.svg"}
+                  layout="fill"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  );
+}
+
+export default Home_HowItWorks;

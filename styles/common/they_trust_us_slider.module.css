@@ -1,0 +1,128 @@
+.section{
+padding: 108px 0 108px;
+background-color: #9d91f5;
+position: relative;
+}
+.article{
+    padding-left: 310px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.header h2{
+    font-size: 32px;
+    line-height: 40px;
+    color: white;
+    font-family: Livvic,sans-serif;
+}
+.header p{
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 30px;
+    min-height: 28px;
+    border-left: 1px solid #2b1b9a;    font-size: 19px;
+    color: #fff;
+    font-weight: 600;
+    font-family: Livvic,sans-serif;
+}
+
+
+.slide{
+    background-color: white !important;
+    height: auto;
+    padding: 56px;
+    border-radius: 8px;
+    box-shadow: 10px 22px 60px #2b1b9a0f;
+    width: calc(100% / 2.4);
+}
+
+.slider_text{
+    font-size: 24px;
+    line-height: 32px;
+    color:#2b1b9a;
+    font-family: Asap,sans-serif;
+    background-image: url("../../public/icon/quote-mark.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 31px 29px;
+    padding-top: 54px;
+}
+.author{
+    font-family: Asap,sans-serif;
+   font-size: 16px;color: #2b1b9a;
+line-height: 26px;
+}
+.author h4{
+    font-weight: 600; 
+    margin-bottom: 0;
+}
+
+.mobile_image_box{
+    height: 245px;background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0;
+    display: none;
+}
+
+@media (min-width: 2200px) {
+    .slide{
+        width: calc(100% / 5.4);
+    }
+ }
+@media (min-width: 1900px) {
+    .slide{
+        width: calc(100% / 4.4);
+    }
+    .author{
+        padding-bottom: 40px;
+    }
+ }
+
+@media (min-width: 1200px) {
+    .slide{
+        width: calc(100% / 3.4);
+    }
+ }
+@media (min-width: 1200px) {
+    .article{
+        padding-left: 403px; 
+    }
+ }
+ 
+
+ @media (max-width: 767.98px) { 
+    .section{
+        padding: 40px 0 108px;
+        }
+    .slide{
+        width: calc(100% / 1.2);
+    }
+    .article{
+        padding-left: 20px;
+    }
+    .header{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .header p{
+        text-align: center;
+        padding-left: 20px;
+        border-left: none;
+    }
+    .mobile_image_box{
+        display: block;
+    }
+  }
+
+
+  @media (max-width: 575.98px) { 
+    .slide{
+        width: calc(100% / 1);
+    }
+    .article{
+        padding-right: 20px;
+    }
+   }

@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 40px;
+  margin: 20px 0;
+  background-color: #f0f8fe;
+  color: #2b1b9a;
+  border-radius: 8px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.img_container {
+  position: relative !important;
+}
+.img_container > div {
+  position: unset !important;
+}
+.img {
+  position: relative !important;
+  width: 100% !important;
+  height: unset !important;
+}

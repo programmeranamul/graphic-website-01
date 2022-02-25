@@ -1,0 +1,155 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f6fa;
+}
+
+.main_title {
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+  font-family: Livvic, sans-serif;
+  font-weight: 600;
+  color: #2b1b9a;
+  padding-bottom: 60px;
+}
+.content {
+  padding: 20px 20px 15px;
+  order: 1;
+  flex-basis: 100%;
+}
+.title {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 13px;
+  font-family: Livvic, sans-serif;
+  /* color: #ffcd1e; */
+  font-weight: 600;
+}
+
+.text {
+  font-family: Asap, sans-serif;
+  color: #2b1b9a;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.single_card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 22px 60px #2b1b9a0f;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 0 24px;
+}
+
+.image_section {
+  height: 92px;
+  flex-basis: 92px;
+  padding: 8px;
+  border-radius: 4px;
+  /* background-color: #ffcd1e; */
+  order: 0;
+  position: relative;
+}
+.image_section > span {
+  position: unset !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.img {
+  position: relative !important;
+  height: 100%;
+  width: 100%;
+}
+
+.price_section {
+  min-width: 107px;
+  min-height: 100px;
+  order: 2;
+  box-shadow: 0 12px 30px #2b1b9a14;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.header {
+  text-align: center;
+  color: #8076c2;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+.amount {
+  font-family: Livvic, sans-serif;
+  font-weight: 600;
+  color: #2b1b9a;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+.footer {
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
+  color: #2b1b9a;
+  margin-bottom: 0;
+}
+.price_yellow_bg {
+  background-color: #ffcd1e;
+}
+.price_yellow_color {
+  color: #ffcd1e;
+}
+.price_red_bg {
+  background-color: #fa585a;
+}
+.price_red_color {
+  color: #fa585a;
+}
+.price_sky_bg {
+  background-color: #67b6f4;
+}
+.price_sky_color {
+  color: #67b6f4;
+}
+.price_beguni_bg {
+  background-color: #9d91f5;
+}
+.price_beguni_color {
+  color: #9d91f5;
+}
+@media (max-width: 767.98px) {
+  .main_title {
+    padding-bottom: 0px;
+  }
+  .single_card {
+    flex-wrap: wrap;
+    background-color: #f8f6fa;
+    box-shadow: none;
+  }
+  .content {
+    order: 0;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 13px;
+  }
+
+  .section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main_title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
