@@ -8,15 +8,45 @@
 .main {
   display: flex;
   justify-content: space-between;
+  padding: 6px;
+}
+.text_area{
+  width: 100%;
+}
+.li{
+  margin-bottom: 16px;
+}
+.img_area{
+  width: 100%;
+}
+.flex_img{
+  display: flex;
+    background: white;
+    border-radius: 8px;
 }
 .img_container {
   position: relative !important;
 }
-.img_container > div {
+.img_container > span {
   position: unset !important;
 }
 .img {
   position: relative !important;
   width: 100% !important;
   height: unset !important;
+  padding: 9px !important;
 }
+
+
+@media (max-width: 767.98px) { 
+  .wrapper {
+    padding: 18px 12px;
+  }
+  .main {
+   flex-direction: column;
+
+  }
+  .img_container{
+    width: 100%;
+  }
+ }

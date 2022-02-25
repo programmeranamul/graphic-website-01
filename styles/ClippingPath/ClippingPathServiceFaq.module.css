@@ -1,0 +1,22 @@
+.section{
+    padding: 3rem;
+}
+.bg{
+    background-color: #f8f6fa;
+}
+
+
+@media (max-width: 767.98px) {
+    .section{
+        padding: 1.5rem;
+    }
+    
+  }
+  @media (max-width: 575.98px) { 
+    .section{
+        padding: 10px;
+        width: 100%;
+    }
+   }
+
+  

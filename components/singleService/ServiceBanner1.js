@@ -26,11 +26,12 @@ function ServiceBanner1({data}) {
           <div className={style.right_section}>
             <h1 className={style.title}>{serviceName}</h1>
             <h2 className={style.sub_title}>
-              Remove backgrounds from hair, fur, and difficult borders
+              {data.title}
             </h2>
             <p className={style.text}>
-              Outsource nitty-gritty photo masking work so you can get back to
-              advanced edits and running your business.
+              {
+                data.text
+              }
             </p>
             <div className={style.action}>
               <Link href="/">

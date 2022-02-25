@@ -11,6 +11,7 @@ export const menuLinks = [
       text: "Services", path: "/services", option: [
         {text: "CLIPPING PATH", path: "/clipping-path" },
         {text: "BACKGROUND REMOVAL", path: "/background-removal"},
+        {text: "IMAGE MASKING", path: "/image-masking"},
       ]
     },
     {

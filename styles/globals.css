@@ -351,6 +351,10 @@ background-color: #67b6f4 !important;
 }
 /*---------------------Common slider with backgroud change End---------------------*/
 
+.ser_ti-09{
+  color: #2b1b9a;
+  font-weight: 700;
+}
 
 
 @media (min-width: 1200px) {

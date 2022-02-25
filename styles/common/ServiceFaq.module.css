@@ -1,56 +1,63 @@
-
-.wrapper{
-    padding: 52px 52px 52px 63px;
-    margin-bottom: 48px;
-    background-color: #fff;
-    border: 3px solid #f8f6fa;
-    border-radius: 8px;
-    transition: all 0.4s ease;
+.wrapper {
+  padding: 52px 52px 52px 63px;
+  margin-bottom: 48px;
+  background-color: #fff;
+  /* border: 3px solid #f8f6fa; */
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  box-shadow: 10px 22px 60px #2b1b9a0f;
 }
-.question_wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.question_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.question{
-    font-family: Livvic, sans-serif;
-    font-weight: 600;
-    color: #2b1b9a;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 0px;
+.question {
+  font-family: Livvic, sans-serif;
+  font-weight: 600;
+  color: #2b1b9a;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 0px;
 }
 
 .icon_wrapepr {
-    width: 71px;
-    height: 71px;
-    box-shadow: 2px 4px 12px #2b1b9a0f;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    cursor: pointer;
+  width: 71px;
+  height: 71px;
+  box-shadow: 2px 4px 12px #2b1b9a0f;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon {
+  color: #2b1b9a;
+}
+
+.ans_wrapper {
+  padding-top: 35px;
+  color: #8076c2;
+  padding-bottom: 16px;
+  font-family: Asap, sans-serif;
+}
+.ans_wrapper p {
+  padding-bottom: 16px;
+}
+
+.active_faq {
+  background-color: #fff !important;
+  box-shadow: 10px 22px 60px #2b1b9a0f;
+  border-color: #2b1b9a;
+}
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    padding: 16px;
   }
-  .icon {
-    color: #2b1b9a;
+  .icon_wrapepr {
+    width: 40px;
+    height: 40px;
   }
-  
-  .ans_wrapper {
-    padding-top: 35px;
-    color: #8076c2;
-    padding-bottom: 16px;
-    font-family: Asap, sans-serif;
-  }
-  .ans_wrapper p{
-    padding-bottom: 16px;
-  }
-  
-  
-  .active_faq {
-    background-color: #fff !important;
-    box-shadow: 10px 22px 60px #2b1b9a0f;
-    border-color: #2b1b9a;
-    
-  }
-  
+}

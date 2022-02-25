@@ -8,13 +8,17 @@ import ServiceBanner2 from "./../../components/singleService/ServiceBanner2";
 import ServiceBanner3 from "./../../components/singleService/ServiceBanner3";
 import SingleFaq from "./../../components/Common/FAQ/SingleFaq";
 import { pricePageFaq } from "./../../data/pricePageData";
-// import ServiceFaq from "../../components/singleService/ServiceFaq";
 import { MenuContext } from "./../_app";
 import { useContext, useEffect } from "react";
-import { clippingPathBannerData1, clippingPathBannerData2, clippingPathBannerData3 } from './../../data/clippingPathData';
-import LeftContentRightImgFaq from './../../components/Common/LeftContentRightImgFaq/LeftContentRightImgFaq';
-import ServiceFaq from './../../components/Common/ServiceFaq/ServiceFaq';
-
+import {
+  clippingPathBannerData1,
+  clippingPathBannerData2,
+  clippingPathBannerData3,
+} from "./../../data/clippingPathData";
+import LeftContentRightImgFaq from "./../../components/Common/LeftContentRightImgFaq/LeftContentRightImgFaq";
+import ServiceFaq from "./../../components/Common/ServiceFaq/ServiceFaq";
+import ClippingPathServiceFaq from "./../../components/clippingPath/ClippingPathServiceFaq";
+import Head from "next/head";
 
 function Index() {
   //hide menu when render new page
@@ -24,14 +28,18 @@ function Index() {
   }, [setShowMenu]);
   return (
     <>
+      <Head>
+        <title>Best Clipping Path Service Provider – Photoeditzone</title>
+        <meta
+          name="description"
+          content="Photoeditzone is the best Clipping Path Service Provider for providing top-notch clipped images, maintaining deadlines, and affordable pricing! Contact us today! "
+        />
+      </Head>
       <ServiceBanner1 data={clippingPathBannerData1} />
-      <ServiceBanner2 data={clippingPathBannerData2}/>
-      <ServiceBanner3 data={clippingPathBannerData3}/>
-      {/* <ServiceFaq list={pricePageFaq} /> */}
-      {/* <LeftContentRightImgFaq /> */}
-      <div className="container p-5">
-      <ServiceFaq />
-      </div>
+      <ServiceBanner2 data={clippingPathBannerData2} />
+      <ServiceBanner3 data={clippingPathBannerData3} />
+      <ClippingPathServiceFaq />
+
       <WhyPhotographersAndEcommerce />
       <Home_HowItWorks />
       <DontHaveToDoEeverything

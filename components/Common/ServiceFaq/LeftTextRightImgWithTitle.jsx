@@ -7,17 +7,17 @@ function LeftTextRightImgWithTitle({ title, list }) {
     <div className={style.wrapper}>
       <h3>{title}</h3>
       <div className={style.main}>
-        <div>
+        <div className={style.text_area}>
           <ul>
             {list.map((el, index) => (
-              <li className="" key={index}>
+              <li className={style.li} key={index}>
                 {el}
               </li>
             ))}
           </ul>
         </div>
-        <div>
-          <div>
+        <div className={style.img_area}>
+          <div className={style.flex_img}>
             <div className={style.img_container}>
               <Image
                 src="/service/Clipping Path/service-clipping-path-super-complex-jewelry-before.png"
